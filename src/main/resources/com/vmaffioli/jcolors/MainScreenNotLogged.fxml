@@ -13,7 +13,7 @@
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="432.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
       <children>
-            <Button fx:id="HelpButton" layoutX="604.0" layoutY="569.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="25.0" text="?" />
+            <Button fx:id="HelpButton" layoutX="576.0" layoutY="559.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="50.0" styleClass="about" text="About" />
             <AnchorPane layoutX="54.0" layoutY="175.0" prefHeight="380.0" prefWidth="532.0">
                <children>
                   <Button fx:id="BrowseButton" layoutX="161.0" layoutY="38.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="Browse" />
@@ -28,8 +28,8 @@
             </AnchorPane>
             <AnchorPane prefHeight="46.0" prefWidth="640.0">
                <children>
-                  <Button fx:id="LoginButton" layoutX="25.0" layoutY="12.0" mnemonicParsing="false" text="Login" />
-                  <Button fx:id="SignupButton" layoutX="80.0" layoutY="12.0" mnemonicParsing="false" text="Signup" />
+                  <Button fx:id="LoginButton" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" text="Login" />
+                  <Button fx:id="SignupButton" layoutX="76.0" layoutY="13.0" mnemonicParsing="false" text="Signup" />
                   <Label fx:id="UserStatusLabel" layoutX="531.0" layoutY="12.0" prefHeight="27.0" prefWidth="67.0" text="Not Logged" />
                   <Circle fx:id="UserStatus" fill="#ff3c3c" layoutX="619.0" layoutY="26.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
                </children>

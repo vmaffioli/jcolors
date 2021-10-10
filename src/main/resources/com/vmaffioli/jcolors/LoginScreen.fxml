@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="400.0" stylesheets="@assets/styles/default_theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vmaffioli.jcolors.LoginController">
+   <top>
+      <AnchorPane prefHeight="125.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="111.0" fitWidth="349.0" layoutX="34.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/img/logo_zoom.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="300.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="signinMessageLabel" layoutX="51.0" layoutY="56.0" prefHeight="20.0" prefWidth="296.0" text=" ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="useremailTextField" layoutX="48.0" layoutY="92.0" prefHeight="25.0" prefWidth="300.0" promptText="someone@example.com" />
+            <PasswordField fx:id="passwordPasswordField" layoutX="48.0" layoutY="125.0" prefHeight="25.0" prefWidth="299.0" promptText="Password" />
+            <Button fx:id="loginButton" layoutX="48.0" layoutY="182.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="65.0" text="Log in" textFill="#252525" />
+            <Label layoutX="48.0" layoutY="224.0" text="Do you need to create an account?" />
+            <Label layoutX="48.0" layoutY="241.0" text="Simply go to" />
+            <Hyperlink fx:id="createAccountLink" layoutX="116.0" layoutY="238.0" onAction="#createAccountOnAction" text="account creation" textFill="#ce6ce3" />
+            <Label layoutX="218.0" layoutY="241.0" prefHeight="17.0" prefWidth="154.0" text="and create your account." />
+            <Button fx:id="guestButton" layoutX="136.0" layoutY="346.0" mnemonicParsing="false" onAction="#goGuest" prefHeight="38.0" prefWidth="124.0" text="Enter as Guest" />
+         </children>
+      </AnchorPane>
+   </center>
+   <styleClass>
+      <String fx:value="background" />
+      <String fx:value="root" />
+   </styleClass>
+</BorderPane>
