@@ -1,0 +1,46 @@
+@font-face {
+	font-family: "Noto Sans";
+	src: url("NotoSans-Regular.ttf");
+}
+
+.root {
+	-fx-font-family: "Noto Sans";
+	
+}
+
+.background {
+	-fx-background-color: #fff;
+}
+
+.button {
+	-fx-background-color: #fff;
+	-fx-border-radius: 10%;
+	-fx-border-color: #ce6ce3;
+	
+}
+
+.button:hover {
+	-fx-border-color: #000;
+	-fx-border-size: 3px solid;
+	
+}
+
+.select {
+	-fx-background-color: #fff;
+	-fx-border-radius: 3%;
+	-fx-border-color: #ce6ce3;	
+	
+}
+
+.select:hover {
+	-fx-border-color: #000;
+	
+}
+
+.combo-box>.list-cell {
+    -fx-alignment: center;
+}
+
+.about {
+	-fx-font-size: 11px;
+}

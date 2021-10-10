@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="600.0" prefWidth="400.0" stylesheets="@assets/styles/default_theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="432.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Button fx:id="HelpButton" layoutX="604.0" layoutY="569.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="25.0" text="?" />
+            <AnchorPane layoutX="54.0" layoutY="175.0" prefHeight="380.0" prefWidth="532.0">
+               <children>
+                  <Button fx:id="BrowseButton" layoutX="161.0" layoutY="38.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="Browse" />
+                  <ComboBox fx:id="LayoutSelect" layoutX="160.0" layoutY="74.0" prefHeight="27.0" prefWidth="212.0" promptText="Layout" styleClass="select" />
+                  <Button fx:id="GoButton" layoutX="190.0" layoutY="320.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="150.0" text="GO!" />
+                  <ImageView fx:id="LayoutPreviewImg" fitHeight="187.0" fitWidth="203.0" layoutX="315.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true" styleClass="button" />
+                  <ImageView fx:id="FilePreviewImg" fitHeight="187.0" fitWidth="203.0" layoutX="14.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true" styleClass="button" />
+                  <Label fx:id="DescriptionLabel" layoutX="127.0" layoutY="6.0" text="Choose your Layout, Browse for Image and then GO!" />
+                  <Label layoutX="254.0" layoutY="120.0" text="       " />
+                  <Label fx:id="FileSelectedLabel" layoutX="254.0" layoutY="35.0" prefHeight="31.0" prefWidth="194.0" text="No file selected..." />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="46.0" prefWidth="640.0">
+               <children>
+                  <Button fx:id="LoginButton" layoutX="25.0" layoutY="12.0" mnemonicParsing="false" text="Login" />
+                  <Button fx:id="SignupButton" layoutX="80.0" layoutY="12.0" mnemonicParsing="false" text="Signup" />
+                  <Label fx:id="UserStatusLabel" layoutX="531.0" layoutY="12.0" prefHeight="27.0" prefWidth="67.0" text="Not Logged" />
+                  <Circle fx:id="UserStatus" fill="#ff3c3c" layoutX="619.0" layoutY="26.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="52.0" prefHeight="123.0" prefWidth="640.0">
+               <children>
+                  <ImageView fx:id="LogoMain" fitHeight="224.0" fitWidth="368.0" layoutX="136.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/img/logo_zoom.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+      </children>
+    </AnchorPane>
+  </children>
+   <styleClass>
+      <String fx:value="background" />
+      <String fx:value="root" />
+   </styleClass>
+</VBox>
